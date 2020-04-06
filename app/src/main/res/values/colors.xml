@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">@android:color/black</color>
     <color name="orange">#FFB306</color>
+    <color name="underline_gray">#c2bebe</color>
+    <color name="bg_change_email">#F1F1F1</color>
+    <color name="hint_color">#8F8C8C</color>
+    <color name="light_gray">#757171</color>
+
 </resources>
