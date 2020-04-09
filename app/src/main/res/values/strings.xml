@@ -16,4 +16,20 @@
     <string name="enter_password_begunok">введите Ваш пароль на Begunok</string>
     <string name="add_card">добавить карту</string>
     <string name="choose_card">выбрать карту</string>
+    <string name="user_data">Имя и фамилия владельца карты</string>
+    <string name="card_number">Номер кредитной карты</string>
+    <string name="save">сохранить</string>
+    <string name="month_year">месяц / год</string>
+    <string name="cvc2">CVC2</string>
+    <string name="from_card">как на карте</string>
+    <string name="ivan_lukash">Ivan Lukash</string>
+    <string name="card_number_placeholder">1234 5678 9101 1213</string>
+    <string name="expiration_year_placeholder">02/19</string>
+    <string name="cvc_placeholder">179</string>
+    <string name="code_from_sms">код с смс</string>
+    <string name="sms_code_placeholder">ZR87UJ</string>
+    <string name="no_sms">Не приходит смс?\nОтправить еще раз!</string>
+    <string name="more">подробнее…</string>
+    <string name="create">создать</string>
+    <string name="completed_tasks">Выполненные задания</string>
 </resources>

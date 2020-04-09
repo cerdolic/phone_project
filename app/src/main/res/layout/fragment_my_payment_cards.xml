@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/selectCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_card"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp" />
+
+    <!--    Use list_item_card and list_item_add_card layouts in RecyclerView adapter here-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectCard"
+        android:layout_above="@id/next" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/next" />
+
+</RelativeLayout>

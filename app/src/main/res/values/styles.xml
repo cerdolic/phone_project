@@ -23,6 +23,40 @@
         <item name="android:layout_marginBottom">8dp</item>
     </style>
 
+    <style name="HintLabelStyleBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="HintLabelStyleBlackThin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="HintLabelStyleBlackBold" parent="HintLabelStyleBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="HintLabelStyleGray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/underline_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
     <style name="EditTextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/tabs"
+    android:background="@color/bg_color"
+    android:fillViewport="true"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/HintLabelStyleBlackBold"
+            android:layout_marginStart="10dp"
+            android:labelFor="@id/code"
+            android:text="@string/user_data" />
+
+        <EditText
+            android:id="@+id/cardHolder"
+            style="@style/EditTextStyle"
+            android:hint="@string/ivan_lukash"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/HintLabelStyleGray"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:labelFor="@id/code"
+            android:text="@string/from_card" />
+
+
+        <TextView
+            style="@style/HintLabelStyleBlackBold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:labelFor="@id/password"
+            android:text="@string/card_number" />
+
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:drawableEnd="@mipmap/ic_launcher"
+            android:text="@string/card_number_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HintLabelStyleBlackThin"
+                android:layout_width="wrap_content"
+                android:text="@string/month_year" />
+
+            <EditText
+                android:id="@+id/expiration"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/expiration_year_placeholder"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/HintLabelStyleBlackThin"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:labelFor="@id/code"
+                android:text="@string/cvc2" />
+
+            <EditText
+                android:id="@+id/code"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/cvc_placeholder"
+                android:inputType="number"
+                android:maxLength="3" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                style="@style/HintLabelStyleBlackThin"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/code_from_sms" />
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/smsCode"
+                    style="@style/EditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/sms_code_placeholder"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/HintLabelStyleGray"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:labelFor="@id/code"
+                    android:lines="2"
+                    android:text="@string/no_sms" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="40dp"
+            android:text="@string/save" />
+    </LinearLayout>
+</ScrollView>

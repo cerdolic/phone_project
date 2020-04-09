@@ -8,5 +8,7 @@
     <color name="bg_change_email">#F1F1F1</color>
     <color name="hint_color">#8F8C8C</color>
     <color name="light_gray">#757171</color>
+    <color name="bg_color">#F5F1F1</color>
+
 
 </resources>
