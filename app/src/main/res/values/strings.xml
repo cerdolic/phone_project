@@ -32,4 +32,10 @@
     <string name="more">подробнее…</string>
     <string name="create">создать</string>
     <string name="completed_tasks">Выполненные задания</string>
+    <string name="request_description">Описание заявки</string>
+    <string name="delivery_address">Адрес выполнения</string>
+    <string name="additional_description">Дополнительное описание</string>
+    <string name="topic">Тема</string>
+    <string name="date_and_time">Дата и время</string>
+    <string name="price">Стоимость</string>
 </resources>

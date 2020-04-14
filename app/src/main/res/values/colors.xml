@@ -10,6 +10,7 @@
     <color name="light_gray">#757171</color>
     <color name="bg_color">#F5F1F1</color>
     <color name="menu_unselected">#474644</color>
+    <color name="header_gray">#615E5E</color>
 
 
 </resources>

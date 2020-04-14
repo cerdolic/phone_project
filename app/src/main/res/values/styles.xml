@@ -62,7 +62,9 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:paddingStart">20dp</item>
         <item name="android:paddingEnd">8dp</item>
-        <item name="singleLine">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
         <item name="android:background">@drawable/edit_text_bg</item>
     </style>
 
@@ -74,5 +76,22 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:background">@drawable/button_bg</item>
     </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="HeaderTextGray">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/header_gray</item>
+    </style>
+
 
 </resources>
