@@ -11,6 +11,10 @@
     <color name="bg_color">#F5F1F1</color>
     <color name="menu_unselected">#474644</color>
     <color name="header_gray">#615E5E</color>
+    <color name="gray_secondary">#D9D6D6</color>
+    <color name="spinner_bg_color">#F6F5F5</color>
+    <color name="card_line_color">#373030</color>
+    <color name="no_sms_color">#ABA5A5</color>
 
 
 </resources>

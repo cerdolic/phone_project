@@ -7,122 +7,85 @@
     android:layout_above="@id/tabs"
     android:background="@color/bg_color"
     android:fillViewport="true"
-    android:paddingStart="24dp"
-    android:paddingEnd="24dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
     tools:ignore="ContentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-
-        <TextView
-            style="@style/HintLabelStyleBlackBold"
-            android:layout_marginStart="10dp"
-            android:labelFor="@id/code"
-            android:text="@string/user_data" />
-
-        <EditText
-            android:id="@+id/cardHolder"
-            style="@style/EditTextStyle"
-            android:hint="@string/ivan_lukash"
-            android:inputType="text" />
-
-        <TextView
-            style="@style/HintLabelStyleGray"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="2dp"
-            android:labelFor="@id/code"
-            android:text="@string/from_card" />
-
-
-        <TextView
-            style="@style/HintLabelStyleBlackBold"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="30dp"
-            android:labelFor="@id/password"
-            android:text="@string/card_number" />
-
-
-        <EditText
-            style="@style/EditTextStyle"
-            android:drawableEnd="@mipmap/ic_launcher"
-            android:text="@string/card_number_placeholder" />
-
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/HintLabelStyleBlackThin"
-                android:layout_width="wrap_content"
-                android:text="@string/month_year" />
+            <include
+                layout="@layout/add_new_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bank_card_height"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="106dp" />
 
-            <EditText
-                android:id="@+id/expiration"
-                style="@style/EditTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_marginStart="8dp"
-                android:hint="@string/expiration_year_placeholder"
-                android:inputType="number" />
+            <include
+                layout="@layout/add_new_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bank_card_height"
+                android:layout_marginEnd="40dp" />
 
-            <TextView
-                style="@style/HintLabelStyleBlackThin"
-                android:layout_width="wrap_content"
-                android:layout_marginStart="16dp"
-                android:labelFor="@id/code"
-                android:text="@string/cvc2" />
 
-            <EditText
-                android:id="@+id/code"
-                style="@style/EditTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_marginStart="8dp"
-                android:hint="@string/cvc_placeholder"
-                android:inputType="number"
-                android:maxLength="3" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@color/gray_secondary"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
 
-        </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="42dp"
             android:layout_marginTop="30dp">
 
             <TextView
                 style="@style/HintLabelStyleBlackThin"
                 android:layout_width="wrap_content"
-                android:layout_marginTop="13dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:text="@string/code_from_sms" />
 
             <LinearLayout
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:gravity="center_horizontal"
                 android:orientation="vertical">
 
 
                 <EditText
                     android:id="@+id/smsCode"
                     style="@style/EditTextStyle"
-                    android:layout_width="wrap_content"
-                    android:hint="@string/sms_code_placeholder"
-                    android:inputType="number" />
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/hint_color"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="0dp"
+                    android:hint="@string/sms_code_placeholder" />
 
                 <TextView
                     style="@style/HintLabelStyleGray"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="4dp"
                     android:labelFor="@id/code"
                     android:lines="2"
+                    android:textColor="@color/no_sms_color"
                     android:text="@string/no_sms" />
 
             </LinearLayout>
@@ -132,7 +95,8 @@
 
         <Button
             style="@style/ButtonStyle"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
             android:text="@string/save" />
     </LinearLayout>
 </ScrollView>

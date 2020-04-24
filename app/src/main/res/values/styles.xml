@@ -93,5 +93,10 @@
         <item name="android:textColor">@color/header_gray</item>
     </style>
 
+    <style name="SpinnerItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="android:layout_height">@dimen/spinner_height</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
 
 </resources>
