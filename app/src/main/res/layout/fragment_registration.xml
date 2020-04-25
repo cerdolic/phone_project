@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="20dp"
-                android:background="@android:color/white" />
+                android:background="@color/underline" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -63,17 +63,14 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:layout_width="110dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/ic_remove"
-                    android:background="@drawable/registration_item_bg" />
+                    style="@style/RoundedImageButton"
+                    android:src="@drawable/ic_remove" />
 
                 <ImageButton
-                    android:layout_width="110dp"
-                    android:layout_height="80dp"
+                    style="@style/RoundedImageButton"
                     android:layout_marginStart="24dp"
-                    android:src="@drawable/ic_plus"
-                    android:background="@drawable/registration_item_bg" />
+                    android:src="@drawable/ic_plus" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -84,17 +81,14 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:layout_width="110dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/ic_plus"
-                    android:background="@drawable/registration_item_bg" />
+                    style="@style/RoundedImageButton"
+                    android:src="@drawable/ic_plus" />
 
                 <ImageButton
-                    android:layout_width="110dp"
-                    android:layout_height="80dp"
+                    style="@style/RoundedImageButton"
                     android:layout_marginStart="24dp"
-                    android:src="@drawable/ic_plus"
-                    android:background="@drawable/registration_item_bg" />
+                    android:src="@drawable/ic_plus" />
+
             </LinearLayout>
         </LinearLayout>
 

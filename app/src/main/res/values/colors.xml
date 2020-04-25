@@ -18,7 +18,8 @@
     <color name="bg_color_secondary">#F5F5F5</color>
     <color name="small_text_color">#171315</color>
     <color name="big_text_color">#181416</color>
-    <color name="registration_screen_bg">#fcfcfc</color>
-
-
+    <color name="registration_screen_bg">#CFCACA</color>
+    <color name="underline">#E4E1E1</color>
+    <color name="underline_avatar">#F4F3F3</color>
+    <color name="avatar_screen_bg">#C5C0C0</color>
 </resources>

@@ -99,4 +99,10 @@
         <item name="android:background">@drawable/spinner_bg</item>
     </style>
 
+    <style name="RoundedImageButton">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/registration_item_bg</item>
+    </style>
+
 </resources>
