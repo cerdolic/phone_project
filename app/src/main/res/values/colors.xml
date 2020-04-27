@@ -22,4 +22,5 @@
     <color name="underline">#E4E1E1</color>
     <color name="underline_avatar">#F4F3F3</color>
     <color name="avatar_screen_bg">#C5C0C0</color>
+    <color name="registration_bottom_bg">#D6D3D3</color>
 </resources>
