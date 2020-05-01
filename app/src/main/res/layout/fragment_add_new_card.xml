@@ -7,96 +7,109 @@
     android:layout_above="@id/tabs"
     android:background="@color/bg_color"
     android:fillViewport="true"
-    android:paddingStart="12dp"
-    android:paddingEnd="12dp"
     tools:ignore="ContentDescription">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
-            <include
-                layout="@layout/add_new_card_back"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/bank_card_height"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="106dp" />
+                android:layout_height="wrap_content">
 
-            <include
-                layout="@layout/add_new_card_front"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/bank_card_height"
-                android:layout_marginEnd="40dp" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="150dp"
-                android:background="@color/gray_secondary"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:visibility="gone">
-
-            </LinearLayout>
-        </FrameLayout>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="30dp">
-
-            <TextView
-                style="@style/HintLabelStyleBlackThin"
-                android:layout_width="wrap_content"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:text="@string/code_from_sms" />
-
-            <LinearLayout
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:orientation="vertical">
-
-
-                <EditText
-                    android:id="@+id/smsCode"
-                    style="@style/EditTextStyle"
-                    android:gravity="top"
+                <include
+                    layout="@layout/add_new_card_back"
                     android:layout_width="match_parent"
-                    android:background="@null"
-                    android:paddingStart="0dp"
-                    android:textColor="@color/hint_color"
-                    android:paddingEnd="8dp"
-                    android:paddingTop="0dp"
-                    android:hint="@string/sms_code_placeholder" />
+                    android:layout_height="@dimen/bank_card_height"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="106dp" />
+
+                <include
+                    layout="@layout/add_new_card_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bank_card_height"
+                    android:layout_marginEnd="40dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:background="@color/gray_secondary"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="30dp">
 
                 <TextView
-                    style="@style/HintLabelStyleGray"
-                    android:layout_width="wrap_content"
-                    android:labelFor="@id/code"
-                    android:lines="2"
-                    android:textColor="@color/no_sms_color"
-                    android:text="@string/no_sms" />
+                    style="@style/HintLabelStyleBlackThin"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/code_from_sms"
+                    android:layout_toStartOf="@id/codeLayout"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/codeLayout"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
 
-        </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/smsCode"
+                        style="@style/EditTextStyle"
+                        android:importantForAutofill="no"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/sms_code_placeholder"
+                        android:inputType="text"
+                        android:paddingStart="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="8dp"
+                        android:textColor="@color/hint_color" />
+
+                    <TextView
+                        style="@style/HintLabelStyleGray"
+                        android:layout_width="wrap_content"
+                        android:labelFor="@id/code"
+                        android:lines="2"
+                        android:text="@string/no_sms"
+                        android:textColor="@color/no_sms_color" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
 
-        <Button
-            style="@style/ButtonStyle"
-            android:layout_marginTop="80dp"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/save" />
-    </LinearLayout>
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:text="@string/save" />
+        </LinearLayout>
+
+        <include layout="@layout/navigation_view_transparent" />
+
+    </FrameLayout>
 </ScrollView>

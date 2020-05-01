@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/bg_color"
-        android:layout_alignParentBottom="true"
-        app:labelVisibilityMode="unlabeled"
-        app:itemIconTint="@color/bottom_menu_background"
-        app:menu="@menu/menu_bottom_navigation" />
+    <include layout="@layout/navigation_view_normal" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -70,6 +61,7 @@
             <EditText
                 android:id="@+id/code"
                 style="@style/EditTextStyle"
+                android:importantForAutofill="no"
                 android:inputType="text" />
 
             <TextView
